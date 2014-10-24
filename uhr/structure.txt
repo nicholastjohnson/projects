@@ -1,0 +1,7 @@
+Structure
+
+Users
+	> 18 Patient
+	< 18 Patient
+	Medical Professional
+	Medical Support Staff

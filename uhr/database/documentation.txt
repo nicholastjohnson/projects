@@ -1,0 +1,86 @@
+Database Architecture
+Commonly used column abbreviations
+	dob - Date of Birth
+	doo - Date of Observation
+	dom - Date of Last Modification
+
+P Tables - Patient data
+	pPatient - Basic demographic data
+		pid - unique
+		firstName -
+		lastName -
+		dob -
+		ssn -
+		sex -
+		email - login identifier
+	pRelation
+		pid -
+		relationID -
+		relationType - 
+		
+	pAddress
+		pid
+		streetA1
+		streetA2
+		cityA
+		stateA
+		zipA
+		streetB1
+		streetB2
+		cityB
+		stateB
+		zipB
+		emailA - secondary email address
+		emailB - secondary email address
+	pActiveEncounters
+		pid
+	pPastEncounters
+		pid
+	pActiveTreatments
+		pid
+	pPastTreatments
+		pid
+	pActiveAssessments
+		pid
+	pPastAssessments
+		pid
+	pAllergies
+		pid
+		allergyID
+		reaction
+		severity
+		doo
+		dom
+		status
+	pActiveDrugs
+		pid
+		drugID
+	pPastDrugs
+		pid
+		drugID
+	pLog
+
+M Tables - Medical professionals data
+	mProvider - Basic demographic data
+		mid - unique
+		firstName -
+		lastName -
+		email - 
+
+O Tables - Medical office data
+	oOffice - Basic office data
+		oid - unique
+		businessName -
+		businessAddress -
+
+S Tables - Session specific data
+
+C Tables - Common tables
+	cAllergies
+		allergyID
+	cDrug
+		drugID
+	cPharmacy
+		pharmacyID
+	cTreatments
+		treatmentID

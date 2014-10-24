@@ -1,0 +1,17 @@
+HTTrack3.48-19+htsswf+htsjava launched on Fri, 24 Oct 2014 09:38:27 at http://flaskbb.org +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://flaskbb.org -O1 "G:\projects\forums-website\forums" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+09:38:44	Error: 	"Not Found" (404) at link flaskbb.org/fonts/glyphicons-halflings-regular.eot (from flaskbb.org/css/bootstrap.min.css)
+09:38:44	Error: 	"Not Found" (404) at link flaskbb.org/fonts/glyphicons-halflings-regular.eot? (from flaskbb.org/css/bootstrap.min.css)
+09:38:44	Error: 	"Not Found" (404) at link flaskbb.org/fonts/glyphicons-halflings-regular.woff (from flaskbb.org/css/bootstrap.min.css)
+09:38:44	Error: 	"Not Found" (404) at link flaskbb.org/fonts/glyphicons-halflings-regular.ttf (from flaskbb.org/css/bootstrap.min.css)
+09:38:44	Error: 	"Not Found" (404) at link flaskbb.org/fonts/glyphicons-halflings-regular.svg (from flaskbb.org/css/bootstrap.min.css)
+09:38:44	Error: 	"Not Found" (404) at link flaskbb.org/Popover requires tooltip.js (from flaskbb.org/js/bootstrap.min.js)
+
+HTTrack Website Copier/3.48-19 mirror complete in 17 seconds : 26 links scanned, 19 files written (443648 bytes overall) [435559 bytes received at 25621 bytes/sec], 24817 bytes transferred using HTTP compression in 11 files, ratio 38%, 4.3 requests per connection
+(6 errors, 0 warnings, 0 messages)
