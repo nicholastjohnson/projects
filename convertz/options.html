@@ -1,0 +1,574 @@
+<html>
+  <head>
+    <title>autoConvert - Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+      type="image/png" 
+      href="img/icon16-noborder.png">
+    
+    <link rel="shortcut icon" 
+      href="img/icon16-noborder.png" 
+      type="image/png">
+    
+    <link rel="stylesheet" href="css/ext/bootstrap.min.css" type="text/css" title="">
+    <link rel="stylesheet" href="css/ac.css" type="text/css" title="">
+    <link rel="stylesheet" href="css/options.css" type="text/css" title="">
+    <style type="text/css">
+      
+      /*To adjust for top navigation bar */
+      body {
+        padding-top: 60px;
+        /*padding-bottom: 40px;*/
+      }
+      
+      /*To force prevent sidebar scrolling*/
+      .sidebar-nav {
+        /*padding: 9px 0;*/
+      }
+
+      .sidebar-nav-fixed {
+        position:fixed;
+        top:60px;
+        width:21.97%;
+      }
+
+      @media (max-width: 767px) {
+        .sidebar-nav-fixed {
+          position:static;
+          width:auto;
+        }
+      }
+
+      @media (max-width: 979px) {
+        .sidebar-nav-fixed {
+          top:70px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="custom">
+      <!--    Navigation Bar at top -->
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container-fluid">
+            
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            
+            <!-- Be sure to leave the brand out there if you want it shown -->
+              <a class="brand" href="#">
+                <img src="img/icon19-noborder.png" width="19" height="19">
+              </a>
+              <a class="brand" href="#">
+                autoConvert
+              </a>
+            
+            <!-- <p class="navbar-text pull left">Some text here</p> -->
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse">
+              <!-- .nav, .navbar-search, .navbar-form, etc -->
+              <ul class="nav">
+                <li class="hidden-phone"><a href="#">&nbsp;</a></li>
+                <li class="hidden-phone"><a href="#">&nbsp;</a></li>
+                <li class="hidden-phone active" id="optionsLink"><a href="#"><i class="icon-cog"></i> Settings</a></li>
+                <li class=""><a href="http://c306.net/autoConvert/changelog.html?utm_source=autoconvert%20for%20chrome&utm_medium=optionspage&utm_content=navbar&utm_campaign=ac_ext" target='_blank' class="extLinks" id="changelog">Change Log</a></li>
+                <li class=""><a href="http://c306.net/autoConvert/faq.html?utm_source=autoconvert%20for%20chrome&utm_medium=optionspage&utm_content=navbar&utm_campaign=ac_ext" target='_blank' class="extLinks" id="FAQ">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="nav-collapse pull-right">
+              <ul class="nav">
+                <li class="divider-vertical"></li>
+                <li class=""><a href="http://c306.net/?utm_source=autoconvert%20for%20chrome&utm_medium=optionspage&utm_content=navbar&utm_campaign=ac_ext" target='_blank'><img src="img/ab19.jpg"  width="19" height="19" style="position:relative;top:0em;border-radius:2px;" alt="C306 Home"></a></li>
+                <li class=""><a href="http://plus.google.com/+AdityaB/?utm_source=autoconvert%20for%20chrome&utm_medium=optionspage&utm_content=navbar&utm_campaign=ac_ext" target='_blank' class="extLinks" id="G+"><img src="img/gplus19.png" width="19" height="19" style="position:relative;top:0em;" alt="Google+"></a></li>
+                <li class=""><a href="http://twitter.com/adityabhaskar?utm_source=autoconvert%20for%20chrome&utm_medium=optionspage&utm_content=navbar&utm_campaign=ac_ext" target='_blank' class="extLinks" id="twitter"><img src="img/twitter19.png" width="19" height="19" style="position:relative;top:0em;" alt="Twitter"> </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--   End of Navigation Bar at top   -->
+      
+      
+      <!--   Main Container Begin   -->
+      <div class="container-fluid">
+        <div class="row-fluid">
+          
+          
+          <!--   Sidebar Begin   -->
+          <div class="span3">
+            <div class=" sidebar-nav sidebar-nav-fixed">
+              <!--Sidebar content-->
+              <div class="page-header">
+                <h1 id="settingsTitle">$SettingsTitle</h1>
+              </div>
+              
+              <div class="tabbable tabs-left" style="margin-left:0px;">
+                <ul class="nav nav-pills nav-stacked">
+                  <li class="active"><a href="#tabUnit" id="tabUnitLink" data-toggle="pill"><h3 id="us_button">$UnitSystem<h3></a></li>
+                  <li class=""><a href="#tabCurrency" id="tabCurrencyLink" data-toggle="pill"><h3 id="currency_button">$Currency<h3></a></li>
+                  <li class=""><a href="#tabTimeZone" id="tabTimeZoneLink" data-toggle="pill"><h3 id="timeZone_button">$TimeZone<h3></a></li>
+                  <li class=""><a href="#tabColour" id="tabColourLink" data-toggle="pill"><h3 id="colour_button">$ColourChooser<h3></a></li>
+                  <li class=""><a href="#tabReplacement" id="tabReplacementLink" data-toggle="pill"><h3 id="noReplace_button">$NoReplace<h3></a></li>
+                  <li class=""><a href="#tabWhitelist" id="tabWhitelistLink" data-toggle="pill"><h3 id="whitelist_button">$Whitelist<h3></a></li>
+                  <li class=""><a href="#tabAdvanced" id="tabAdvancedLink" data-toggle="pill"><h3 id="extras_button">$Experimentals<h3></a></li>
+                  <li class=""><a href="https://docs.google.com/spreadsheet/viewform?formkey=dE1OZGNnUFhrS3FUUW81OEFkRVNHTnc6MQ" target="_blank"><h3 id="feedback_button">$Feedback<h3></a></li>
+                </ul>
+              </div>
+              <div class="alert alert-info well" id="descrPane">
+              </div>
+            </div>
+          </div>
+          <!--   Sidebar End   -->
+          
+          <!--   Body Begin   -->
+          <div class="span8">
+            <!--   Body content   -->
+            <div class="row-fluid">
+              <div class="span2">
+                <div class="alert alert-success invisible" id="placeholderSaveStatus">
+                  &nbsp;<!--   nbsp so that empty status space doesn't collapse  -->
+                </div>
+              </div>
+              
+              <div class="span6">
+                <div class="alert alert-success fade in hide" id="saveStatus">
+                  <a class="close" data-dismiss="alert" href="#">&times;</a>
+                  &nbsp;
+                  <!-- nbsp so that empty status space doesn't collapse  -->
+                  <!--  Update status goes here  -->
+                </div>
+              </div>
+              
+              <div class="span4">
+                <form class="form-horizontal" id="settingSyncForm">
+                  <fieldset>
+                    <div class="control-group">
+                      <label class="control-label" for="settingsSync">Sync settings:</label>
+                      <div class="controls">
+                        <div class="btn-group btn-toggle" id="settingsSync">
+                          <button class="btn btn-default" id="settingsSyncOn">On</button>
+                          <button class="btn btn-danger" id="settingsSyncOff">Off</button>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+
+              <!-- <div class="span1"> -->
+                <!-- <div class="alert alert-success invisible" id="placeholderSaveStatus"> -->
+                  <!-- &nbsp;  nbsp so that empty status space doesn't collapse  -->
+                <!-- </div> -->
+              <!-- </div> -->
+              
+            </div>
+            
+            <div class="row-fluid">
+              <div class="span12 tab-content" id="content">
+                
+                <div class="tab-pane fade in active" id="tabUnit">
+                  <div class="sectionHolder" style="border:0;">
+                    <div class="sectionContent">
+                      <p class="settingsItem" id="unitItem"><span></span></p>
+                      
+                      <div id="unitoptions">
+                        <div class="unitCheckbox" id="metric"><label for="metric">{$str.metric}</label></div>
+                        <div class="unitCheckbox" id="imperial"><label for="imperial">{$str.imperial}</label></div>
+                      </div>
+                      
+                      <div id="moreLess">
+                        <span id="moreBtn" class="moreLessBtn hide">{$str.more}</span>
+                        <span id="lessBtn" class="moreLessBtn">{$str.less}</span>
+                      </div>
+                      
+                      <div id="unitDetails">
+                        
+                        <div class="unitType">
+                          <div class="unitTypeHeader">
+                            <p id="labelDistance">{$str.distance}</p>
+                          </div>
+                          <div class="unitTypeContent">
+                            <input type="radio" name="distance" id="duImp" value="imperial" /><label for="duImp">{$str.duImp}</label>
+                            <input type="radio" name="distance" id="duMet" value="metric" /><label for="duMet">{$str.duMet}</label>
+                            <input type="radio" name="distance" id="duNone" value="none" /><label for="duNone">{$str.none}</label>
+                          </div>
+                        </div>
+                        
+                        
+                        <div class="unitType">
+                          <div class="unitTypeHeader">
+                            <p id="labelArea">{$str.area}</p>
+                          </div>
+                          <div class="unitTypeContent">
+                            <input type="radio" name="area" id="arImp" value="imperial" /><label for="arImp">{$str.arImp}</label>
+                            <input type="radio" name="area" id="arMet" value="metric" /><label for="arMet">{$str.arMet}</label>
+                            <input type="radio" name="area" id="arNone" value="none" /><label for="arNone">{$str.none}</label>
+                          </div>
+                        </div>
+                        
+                        
+                        <div class="unitType">
+                          <div class="unitTypeHeader">
+                            <p id="labelVolume">{$str.volume}</p>
+                          </div>
+                          <div class="unitTypeContent">
+                            <input type="radio" name="volume" id="volImp" value="imperial" /><label for="volImp">{$str.volImp}</label>
+                            <input type="radio" name="volume" id="volMet" value="metric" /><label for="volMet">{$str.volMet}</label>
+                            <input type="radio" name="volume" id="volNone" value="none" /><label for="volNone">{$str.none}</label>
+                          </div>
+                        </div>
+                        
+                        
+                        <div class="unitType">
+                          <div class="unitTypeHeader">
+                            <p id="labelWeight">{$str.weight}</p>
+                          </div>
+                          <div class="unitTypeContent">
+                            <input type="radio" name="weight" id="wtImp" value="imperial" /><label for="wtImp">{$str.wtImp}</label>
+                            <input type="radio" name="weight" id="wtMet" value="metric" /><label for="wtMet">{$str.wtMet}</label>
+                            <input type="radio" name="weight" id="wtNone" value="none" /><label for="wtNone">{$str.none}</label>
+                          </div>
+                        </div>
+                        
+                        
+                        <div class="unitType">
+                          <div class="unitTypeHeader">
+                            <p id="labelEnergy">{$str.energy}</p>
+                          </div>
+                          <div class="unitTypeContent">
+                            <input type="radio" name="energy" id="enImp" value="imperial" /><label for="enImp">{$str.enImp}</label>
+                            <input type="radio" name="energy" id="enMet" value="metric" /><label for="enMet">{$str.enMet}</label>
+                            <input type="radio" name="energy" id="enNone" value="none" /><label for="enNone">{$str.none}</label>
+                          </div>
+                        </div>
+                        
+                        
+                        <div class="unitType">
+                          <div class="unitTypeHeader">
+                            <p id="labelPower">{$str.power}</p>
+                          </div>
+                          <div class="unitTypeContent">
+                            <input type="radio" name="power" id="pwImp" value="imperial" /><label for="pwImp">{$str.pwImp}</label>
+                            <input type="radio" name="power" id="pwMet" value="metric" /><label for="pwMet">{$str.pwMet}</label>
+                            <input type="radio" name="power" id="pwNone" value="none" /><label for="pwNone">{$str.none}</label>
+                          </div>
+                        </div>
+                        
+                        
+                        <div class="unitType">
+                          <div class="unitTypeHeader">
+                            <p id="labelTemperature">{$str.temperature}</p>
+                          </div>
+                          <div class="unitTypeContent">
+                            <input type="radio" name="temperature" id="tpImp" value="imperial" /><label for="tpImp">{$str.tpImp}</label>
+                            <input type="radio" name="temperature" id="tpMet" value="metric" /><label for="tpMet">{$str.tpMet}</label>
+                            <input type="radio" name="temperature" id="tpNone" value="none" /><label for="tpNone">{$str.none}</label>
+                          </div>
+                        </div>
+                        
+                        
+                        <div class="unitType">
+                          <div class="unitTypeHeader">
+                            <p id="labelTorque">{$str.torque}</p>
+                          </div>
+                          <div class="unitTypeContent">
+                            <input type="radio" name="torque" id="tqImp" value="imperial" /><label for="tqImp">{$str.tqImp}</label>
+                            <input type="radio" name="torque" id="tqMet" value="metric" /><label for="tqMet">{$str.tqMet}</label>
+                            <input type="radio" name="torque" id="tqNone" value="none" /><label for="tqNone">{$str.none}</label>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!--  Tab content ends  -->
+                </div>
+                
+                <div class="tab-pane fade in" id="tabCurrency">
+                  <!--  Tab content begins  -->
+                  <div class="sectionHolder">
+                    <div class="sectionContent">
+                      <p class="settingsItem" id="currencyItem"><span></span></p>
+
+                      <div class="currencyOptions" id="currencyList">
+                        <!-- Insert currency list here, from js, based on topCurrencies[] -->
+                      </div>
+                      
+                      <div class="currencyOptions hide" id="otherCurrencyForm">
+                        <form class="form-horizontal">
+                          <input type="text" class="input-large" id="otherCurrencyInput" placeholder="Enter Currency" data-provide="typeahead">
+                          <span class="label hide label-success otherCurrencyLabel" id="otherCurrencySuccess"><i class="icon-ok-sign icon-white" rel="tooltip"></i>&nbsp;&nbsp;New Currency Selected</span>
+                          <span class="label hide label-important otherCurrencyLabel" id="otherCurrencyError"><i class="icon-exclamation-sign icon-white" rel="tooltip"></i>&nbsp;&nbsp;Currency Not Found</span>
+                        </form>
+                      </div>
+                      
+                      <div class="currencyOptions">
+                        <label for="currSymbolType" id='currSymbolTypeLabel'>
+                          <input type="checkbox" id="currSymbolType" name="currSymbolType" value="true"/>
+                          <!-- Rounded or Dashed string from message.json -->
+                        </label>
+                      </div>
+
+                      <small id="currencyTabLivePreviewLabel" class="livePreviewLabel">Live Preview</small>
+                      <div class="currencyOptions">
+                        <div id="currencyTabLivePreview" class="well livePreview">
+                          <strong id="currencyTabLivePreviewStrong" class="">&nbsp;<span id='currencyTabLivePreviewSymbol'></span>&nbsp;132.99&nbsp;&nbsp;</strong>
+                        </div>
+                      </div>
+                      <small id="currencyCredit">Currency Credit</small>
+
+                    </div>
+                  </div>
+                  <!--  Tab content ends  -->
+                </div>
+                
+                <div class="tab-pane fade in" id="tabTimeZone">
+                  <div class="page-header">
+                    <h1 id="tzTitle" class="centered"></h1>
+                    <h6 class="small muted centered">Pro feature, will be available to everyone during free trial period</h6>
+                  </div>
+                  <!--  Tab content begins  -->
+                  <div class="sectionHolder">
+                    <div class="sectionContent disabled">
+                      <p class="settingsItem" id="tzItem"><span></span></p>
+
+                      <div class="tzOptions" id="tzList">
+                        <!-- Insert currency list here, from js, based on topCurrencies[] -->
+                      </div>
+                      
+                      <div class="tzOptions hide" id="otherTzForm">
+                        <form class="form-horizontal">
+                          <input type="text" class="input-large" id="otherTzInput" placeholder="Enter Time Zone" data-provide="typeahead">
+                          <span class="label hide label-success otherTzLabel" id="otherTzSuccess"><i class="icon-ok-sign icon-white" rel="tooltip"></i>&nbsp;&nbsp;New Time Zone Selected</span>
+                          <span class="label hide label-important otherTzLabel" id="otherTzError"><i class="icon-exclamation-sign icon-white" rel="tooltip"></i>&nbsp;&nbsp;Currency Not Found</span>
+                        </form>
+                      </div>
+                      
+                      <!-- Add an option to always show time in 12/24 hour clocks -->
+
+                      <small id="tzTabLivePreviewLabel" class="livePreviewLabel">Live Preview</small>
+                      <div class="tzOptions">
+                        <div id="tzTabLivePreview" class="well livePreview">
+                          <strong id="tzTabLivePreviewStrong" class="">&nbsp;<span>13:29</span>&nbsp;<span id='tzTabLivePreviewSymbol'>BST</span>&nbsp;</strong>
+                        </div>
+                      </div>
+                      <small id="tzCredit">Time Zone Data Credit</small>
+
+                    </div>
+                  </div>
+                  <!--  Tab content ends  -->
+                </div>
+                
+                <div class="tab-pane fade in" id="tabColour">
+                  <!--  Tab content begins  -->
+                  <div class="sectionHolder">
+                    <div class="sectionContent">
+                      <div class="row-fluid">
+                        <div class="span4">
+                          <p class="settingsItem" id="unitColourTitle">Unit Highlight</p>
+
+                          <div class="colourOptions">
+                            <div class="colourCheckbox noColour" id="unit-noColour">{$str.none}</div>
+                            <!-- <div class="colourCheckbox lightYellow" id="unit-lightYellow">{$str.clear}</div> -->
+                            <div class="colourCheckbox defaultColour" id="unit-defaultColour">{$str.base}</div>
+                            <div class="colourCheckbox azure" id="unit-azure">{$str.clear}</div>
+                            <div class="colourCheckbox paleGreen" id="unit-paleGreen">{$str.clear}</div>
+                            <div class="colourCheckbox lightBlue" id="unit-lightBlue">{$str.clear}</div>
+                            <div class="colourCheckbox lightSalmon" id="unit-lightSalmon">{$str.clear}</div>
+                            <div class="colourCheckbox specialColour" id="unit-specialColour">{$str.clear}</div>
+                            <div class="colourCheckbox lightGray" id="unit-lightGray">{$str.clear}</div>
+                          </div>
+
+                          <div class="colourOptions">
+                            <div class="btn-group highlightType" id="unitHighlight" data-toggle="buttons-radio">
+                                <a class="btn" id="unit-acround">Round</a>
+                                <a class="btn" id="unit-acdashed">Dashed</a>
+                                <a class="btn" id="unit-acnone">None</a>
+                            </div>
+                          </div>
+                          
+                          <small id="unitLivePreviewLabel" class="livePreviewLabel">Live Preview</small>
+                          <div class="colourOptions">
+                            <div id="unitLivePreview" class="well livePreview">
+                              <strong id="unitLivePreviewStrong" class="">&nbsp;132.99&nbsp;</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="span4">
+                          <p class="settingsItem" id="currencyColourTitle">Currency Highlight</p>
+                          <div class="colourOptions">
+                            <div class="colourCheckbox noColour" id="currency-noColour">{$str.none}</div>
+                            <!-- <div class="colourCheckbox lightYellow" id="currency-lightYellow">{$str.clear}</div> -->
+                            <div class="colourCheckbox defaultColour" id="currency-defaultColour">{$str.base}</div>
+                            <div class="colourCheckbox azure" id="currency-azure">{$str.clear}</div>
+                            <div class="colourCheckbox paleGreen" id="currency-paleGreen">{$str.clear}</div>
+                            <div class="colourCheckbox lightBlue" id="currency-lightBlue">{$str.clear}</div>
+                            <div class="colourCheckbox lightSalmon" id="currency-lightSalmon">{$str.clear}</div>
+                            <div class="colourCheckbox specialColour" id="currency-specialColour">{$str.clear}</div>
+                            <div class="colourCheckbox lightGray" id="currency-lightGray">{$str.clear}</div>
+                          </div>
+                          
+                          <div class="colourOptions">
+                            <div class="btn-group highlightType" id="currencyHighlight" data-toggle="buttons-radio">
+                                <a class="btn" id="currency-acround">Round</a>
+                                <a class="btn" id="currency-acdashed">Dashed</a>
+                                <a class="btn" id="currency-acnone">None</a>
+                            </div>
+                          </div>
+                          
+                          <small id="currencyLivePreviewLabel" class="livePreviewLabel">Live Preview</small>
+                          <div class="colourOptions">
+                            <div id="currencyLivePreview" class="well livePreview">
+                              <strong id="currencyLivePreviewStrong" class="">&nbsp;<span id='currencyLivePreviewSymbol'></span>&nbsp;132.99&nbsp;&nbsp;</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="span4 disabled">
+                          <p class="settingsItem" id="tzColourTitle">Time Zone Highlight</p>
+                          <div class="colourOptions">
+                            <div class="colourCheckbox" id="tz-noColour">{$str.none}</div>
+                            <!-- <div class="colourCheckbox" id="tz-lightYellow">{$str.clear}</div> -->
+                            <div class="colourCheckbox defaultColour" id="tz-defaultColour">{$str.base}</div>
+                            <div class="colourCheckbox azure" id="tz-azure">{$str.clear}</div>
+                            <div class="colourCheckbox paleGreen" id="tz-paleGreen">{$str.clear}</div>
+                            <div class="colourCheckbox lightBlue" id="tz-lightBlue">{$str.clear}</div>
+                            <div class="colourCheckbox lightSalmon" id="tz-lightSalmon">{$str.clear}</div>
+                            <div class="colourCheckbox specialColour" id="tz-specialColour">{$str.clear}</div>
+                            <div class="colourCheckbox lightGray" id="tz-lightGray">{$str.clear}</div>
+                          </div>
+                          
+                          <div class="colourOptions">
+                            <div class="btn-group highlightType" id="tzHighlight" data-toggle="buttons-radio">
+                                <a class="btn" id="tz-acround">Round</a>
+                                <a class="btn" id="tz-acdashed">Dashed</a>
+                                <a class="btn" id="tz-acnone">None</a>
+                            </div>
+                          </div>
+                            
+                          <small id="tzLivePreviewLabel" class="livePreviewLabel">Live Preview</small>
+                          <div class="colourOptions">
+                            <div id="tzLivePreview" class="well livePreview">
+                              <strong id="tzLivePreviewStrong" class="">&nbsp;<span>13:29</span>&nbsp;<span id='tzLivePreviewSymbol'>BST</span>&nbsp;</strong>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  Tab content ends  -->
+                </div>
+                
+                <div class="tab-pane fade in" id="tabReplacement">
+                  <!--  Tab content begins  -->
+                  <div class="sectionHolder">
+                    <div class="sectionHeader">
+                      <h3 id="nrTitle">{$str.title}</h3>
+                    </div>
+                    <div class="sectionContent">
+                      <div id="nrOptions">
+                        <label class='noReplaceLabel' for="noReplaceOff"><input type="radio" id="noReplaceOff" value="false" name="noReplace"/></label>
+                        <label class='noReplaceLabel' for="noReplaceOn"><input type="radio" id="noReplaceOn" value="true" name="noReplace"/></label>
+                      </div>
+                    </div>
+
+                    <div class="sectionHeader">
+                      <h3 id="currTitle">{$str.title}</h3>
+                    </div>
+                    <div class="sectionContent">
+                      <div id="currReplaceOptions">
+                        <label class='currReplaceLabel' for="currReplaceOff"><input type="radio" id="currReplaceOff" value="true" name="currReplace"/></label>
+                        <label class='currReplaceLabel' for="currReplaceOn"><input type="radio" id="currReplaceOn" value="false" name="currReplace"/></label>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--  Tab content ends  -->
+                </div>
+                
+                <div class="tab-pane fade in" id="tabAdvanced">
+                  <!--  Tab content begins  -->
+                  <div class="sectionHolder">
+                    <div class="sectionContent">
+                      <div class="moreOptionsItem">
+                        <label class='moreOptionsLabel' for="disableIn"><input type="checkbox" id="disableIn"/>{$str.disableIn}</label>
+                        <label class='moreOptionsLabel' for="disableQuotes"><input type="checkbox" id="disableQuotes"/>{$str.disableQuotes}</label>
+                        <label class='moreOptionsLabel' for="disableTo"><input type="checkbox" id="disableTo"/>{$str.disableTo}</label>
+                        <label class='moreOptionsLabel' for="lbSt"><input type="checkbox" id="lbSt"/>{$str.lbSt}</label>
+                        <label class='moreOptionsLabel' for="showTooltip"><input type="checkbox" id="showTooltip"/>{$str.showTooltip}</label>
+                        <label class='moreOptionsLabel' for="showUnitRate"><input type="checkbox" id="showUnitRate"/>{$str.showUnitRate}</label>
+                        <label class='moreOptionsLabel' for="showContextMenu"><input type="checkbox" id="showContextMenu"/>{$str.showContextMenu}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  Tab content ends  -->
+                </div>
+                
+                <div class="tab-pane fade in" id="tabWhitelist">
+                  <!--  Tab content begins  -->
+                  <div class="sectionHolder">
+                    <div class="sectionContent">
+                      <p class="settingsItem" id="currencyItem"><span></span></p>
+
+                      <div class="whitelistOptions" id="addWhitelist">
+                        <!-- Insert currency list here, from js, based on topCurrencies[] -->
+                        <form class="form-horizontal" id="whitelistAddForm">
+                          <fieldset>
+                            <!-- URL input box -->
+                            <div class="control-group">
+                              <label class="control-label" for="whitelistInput" id="whitelistInputLabel">Add to whitelist</label>
+                              <div class="controls">
+                                <div class="input-append span12">
+                                  <!-- <span class="add-on">http://</span> --><input class="span8" id="whitelistInput" type="text" placeholder="www.example.com or *.example.com/*"><button class="btn btn-primary" type="submit" id="whitelistAddButton">Add</button>
+                                </div>
+                                <p class="help-block" id="wishlistAddHelp" style="clear:both;padding-top:3px;">Provide URL of website or domain you want to stop autoConvert from working on.</p>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
+                      
+                      <div class="whitelistOptions" id="removeWhitelist">
+                        <form class="form-horizontal" id="whitelistRemoveForm">
+                          <fieldset>
+                             <div class="control-group">
+                              <label class="control-label" for="whitelistSelect" id="whitelistSelectLabel">Manage whitelist</label>
+                              <div class="controls">
+                                <select multiple="multiple" class="span9" id="whitelistSelect" size="9">
+                                </select>
+                                <p></p>
+                                <button class="input btn btn-inverse" id="whitelistRemoveButton" type="submit">Remove from whitelist</button>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!--  Tab content ends  -->
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <!--   Body End   -->
+        </div>
+      </div>
+      <!--   Main Container End   -->
+    </div>
+    
+    <script type="text/javascript" src="js/ext/google-analytics-bundle.js"></script>
+    <script type="text/javascript" src="js/ext/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ext/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/currRetreiver.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+    <script type="text/javascript" src="js/ext/bootstrap.min.js"></script>
+  </body>
+</html>

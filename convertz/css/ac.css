@@ -1,0 +1,176 @@
+.convertIt {
+  position:relative;
+  /*color:black;*/
+}
+
+.convertIt:hover {
+}
+
+.convertIt span {
+  display: none;
+  color:black;
+  white-space:nowrap;
+  font-weight: normal;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*the span will display just on :hover state*/
+.convertIt:not(.showTooltip):hover span:not(.unitRate)
+{ 
+  display:block;
+  position:absolute;
+  top:1.5em;
+  left:1em; 
+  border:1px solid lightgray;
+  background-color:#fffacd;
+  border-radius: 0.5em;
+  padding:0.3em 0.4em;
+  box-shadow: 1px 1px 1px 0 gray;
+  z-index:5000;
+  white-space:nowrap;
+}
+
+.convertIt:not(.noColour) {
+  color:black;
+}
+
+.lightYellow{
+  background-color:lightyellow;
+}
+
+.lightGray{
+  background-color:lightgray;
+}
+
+.paleGreen{
+  background-color:palegreen;
+}
+
+.azure{
+  background-color:azure;
+}
+
+.lightBlue{
+  background-color:lightblue;
+}
+
+.lightSalmon{
+  background-color:lightsalmon;
+}
+
+.defaultColour{
+  background-color: #FFFACD;
+}
+
+.specialColour{
+  background-color:#663399;
+  color: white !important;
+}
+
+.noColour{
+  background-color: transparent;
+  /*color:inherit;*/
+}
+
+.convertCurrency {
+  position:relative;
+  /*background-color: gainsboro;*/
+}
+
+span.convertCurrency span.currNone {
+  display: none;
+}
+
+/*the span will display just on :hover state*/
+/*span.convertCurrency:hover span.currNone {*/
+span.convertCurrency:not(.showTooltip):hover span.currNone
+{
+  display:inherit;
+  position:absolute;
+  top:1.5em;
+  left:1em; 
+  border:1px solid gainsboro;
+  box-shadow: 1px 1px 1px 0 gray;
+  background-color: azure;
+  border-radius: 0.4em;
+  z-index:5000;
+  color: black;
+}
+
+span.currPopup {
+  display: block;
+  min-width: 200px;
+  padding:0.3em 0.4em;
+  white-space:nowrap;
+  font-weight: normal;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+span.freshState{
+  display: inline-block !important;
+  position: static !important;
+  border: 0 !important;
+  box-shadow: 0 0 0 0 !important;
+  font-size: 10px;
+  padding: 0;
+}
+
+span.exchangeRateNode{
+  display: inline-block !important;
+  position: static !important;
+  border: 0 !important;
+  box-shadow: 0 0 0 0 !important;
+  font-size: 10px;
+  padding: 0;
+}
+
+.currFresh{
+  color: green;
+}
+
+.currRipe{
+  color: olive;
+}
+
+.currStale{
+  color: red;
+}
+
+.currNone{
+  color: inherit;
+}
+
+.acrounded,
+.acround
+{
+  border-radius: 0.5em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  white-space: nowrap;
+}
+
+.dashed,
+.acdashed
+{
+  border-bottom: 1px dashed gray;
+  white-space: nowrap;
+}
+
+.currHighlightNone,
+.tzHighlightNone,
+.acnone
+{
+  white-space: nowrap;
+  /*background-color: transparent;*/
+}
+
+.unitRate {
+  display: inline !important;
+  font-size: 10px;
+}
+
+
+.convertTz {
+  position:relative;
+}
+

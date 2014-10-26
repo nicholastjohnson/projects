@@ -1,0 +1,601 @@
+  #settingsTitle {
+    text-align:center;
+  }
+  
+  div#custom ul.nav-pills > li.active > a {
+    background-color: goldenrod;
+    color: white;
+  }
+
+  div#custom ul.nav-pills > li.active > a:hover {
+    background-color: goldenrod;
+    color: white;
+  }
+
+  div#custom ul.nav-pills > li > a {
+    color: inherit;
+  }
+
+  div#custom ul.nav-pills > li > a:hover {
+    background-color: khaki;
+    color: inherit;
+  }
+  
+  div#custom div.page-header {
+    margin-top: 0;
+  }
+  
+  div#saveStatus {
+    text-align:center;
+  }
+  
+    .sectionHolder {
+      width:100%;
+      float:left;
+      margin: auto;
+    }
+    
+      .sectionHeader {
+        padding-left:10px;
+        margin-bottom: 1em;
+        margin-top: 2em;
+      }
+      
+      .sectionContent {
+        width:95%;
+        margin:auto;
+      }
+    
+    p.settingsItem{
+      line-height: 150%;
+      font-size: 20px;
+      text-align:justify;
+      margin: 0 0 10px 10px;
+      cursor:help;
+      width:80%;
+      position:relative;
+    }
+
+      #tabColour .settingsItem{
+        text-align: center;
+        width: calc(100% - 10px);
+        cursor: inherit;
+      }
+    
+    div#unitoptions{
+      margin-left:10%;
+      width:80%;
+      margin-bottom:10px;
+    }
+    
+      div.unitCheckbox{
+        width:100%;
+        padding:10px;
+        padding-left:20px;
+        background-color:gainsboro;
+        cursor:pointer;
+      }
+      
+      div.unitCheckbox:first-child{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      
+      div.unitCheckbox:not(:first-child){
+        border-top: 1px solid lightgray;
+      }
+      
+      div.unitCheckbox:last-child{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      
+      div.unitCheckbox:not(.checked):hover{
+        background-color:paleGreen;
+      }
+      
+        div.unitCheckbox label{
+            line-height: 150%;
+            font-size: 14px;
+            padding-left: 10px;
+            cursor:pointer;
+            margin:0;
+        }
+        
+  div#unitDetails {
+    margin-top:10px;
+    margin-left:10%;
+    border-top:1px solid gray;
+    padding-top:10px;
+    width:80%;
+  }
+  
+    div.unitType{
+      width:100%;
+      padding:5px 30px 5px 0;
+      white-space:nowrap;
+    }
+    
+      div.unitTypeHeader{
+        display:inline-block;
+        width:15%;
+      }
+      
+      div.unitTypeHeader > p{
+        display:inline-block;
+        
+        margin-top:0;
+        margin-bottom:0;
+        font-weight:bold;
+      }
+      
+      div.unitTypeContent{
+        display:inline-block;
+        white-space:nowrap;
+        width:85%;
+      }
+      
+        div.unitTypeContent > input{
+          display:none;
+          margin:0;
+          padding:0;
+          border:0;
+        }
+        
+        div.unitTypeContent > label{
+          display:inline-block;
+          width:40%;
+          height:30px;
+          line-height:30px;
+          background-color: gainsboro;
+          margin:auto;
+          padding:5px;
+          text-align:center;
+          text-overflow:ellipsis;
+          border-radius: 5px;
+          cursor:pointer;
+        }
+        
+        div.unitTypeContent > input[value="none"]+label{
+          width:20%;
+        }
+        
+        div.unitTypeContent > input:not(:checked)+label:hover{
+          background-color: paleGreen;
+        }
+        
+    .currencyOptions, 
+    .whitelistOptions,
+    .tzOptions
+    {
+      margin-left:10%;
+      width:80%;
+      margin-bottom:10px;
+    }
+    
+    .colourOptions{
+      margin-left:10px;
+      width:calc(100% - 10px);
+      margin-bottom:10px;
+    }
+
+    div.whitelistOptions:not(:first-of-type) {
+      border-top: 1px solid lightgray;
+      padding-top: 20px;
+    }
+      
+      div.colourCheckbox{
+        width:calc(100% - 30px - 4px);
+        padding:10px;
+        padding-left:20px;
+        text-align:center;
+        border-width:2px;
+        border-style:solid;
+        border-color: #e5e4e2;
+        margin-bottom:2px;
+        border-radius: 5px;
+        line-height: 150%;
+        font-size: 14px;
+        cursor:pointer;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      div.colourCheckbox:not(.checked):hover{
+        border-color:khaki;
+        border-color:rgba(0,0,0,0.45);
+      }
+      
+      div.colourCheckbox.checked{
+        border-color:goldenrod;
+        border-color:rgba(0,0,0,0.8);
+      }
+      
+
+      #unitHighlightTypeLabel,
+      #currencyHighlightTypeLabel,
+      #tzHighlightTypeLabel
+      {
+        width: calc(100% - 20px);
+        padding:10px;
+        background-color: gainsboro;
+        /*margin-top:25px;*/
+        border-radius: 5px;
+        font-size: 14px;
+        cursor:pointer;
+      }
+      
+      #unitHighlightTypeLabel small,
+      #currencyHighlightTypeLabel small,
+      #tzHighlightTypeLabel small,
+      {
+        font-size: smaller;
+      }
+
+      
+    div#nrOptions, div#currReplaceOptions{
+      margin-left:10%;
+      width:80%;
+      margin-bottom:10px;
+    }
+    
+      input[name="noReplace"], input[name="currReplace"] {
+        display:none;
+      }
+      
+      label.noReplaceLabel, label.currReplaceLabel{
+        display:inline-block;
+        width:100%;
+        padding:10px;
+        padding-left:20px;
+        background-color:gainsboro;
+        cursor:pointer;
+        text-overflow:ellipsis;
+        height:30px;
+        line-height:30px;
+        margin-bottom:0;
+      }
+      
+      label.noReplaceLabel:first-child, label.currReplaceLabel:first-child{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      
+      label.noReplaceLabel:not(:first-child), label.currReplaceLabel:not(:first-child){
+        border-top: 1px solid lightgray;
+      }
+      
+      label.noReplaceLabel:last-child, label.currReplaceLabel:last-child{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      
+      label.noReplaceLabel:not(.checked):hover, label.currReplaceLabel:not(.checked):hover{
+        background-color:paleGreen;
+      }
+      
+    div.moreOptionsItem{
+      margin-left:10%;
+      width:80%;
+      margin-bottom:10px;
+    }
+    
+      label.moreOptionsLabel{
+        display:inline-block;
+        width:100%;
+        padding:10px;
+        padding-left:20px;
+        background-color:gainsboro;
+        cursor:pointer;
+        text-overflow:ellipsis;
+        height:30px;
+        line-height:30px;
+        border-radius: 5px;
+      }
+      
+      label.moreOptionsLabel:not(.checked):hover{
+        background-color:paleGreen;
+      }
+      
+      div.moreOptionsItem input {
+        padding:2em;
+        margin-right:2em;
+      }
+      
+    .tzCheckbox,
+    .currencyCheckbox
+    {
+      display: inline-block;
+      width:43%;
+      padding:10px;
+      padding-left:30px;
+      background-color: gainsboro;
+      line-height: 150%;
+      font-size: 14px;
+      cursor:pointer;
+    }
+    
+    .tzCheckbox:not(.checked):hover,
+    .currencyCheckbox:not(.checked):hover{
+      background-color: paleGreen;
+    }
+    
+    .tzCheckbox#none,
+    .currencyCheckbox#none{
+      font-weight: bolder;
+    }
+    
+    @media (max-width: 1257px){
+      .tzCheckbox,
+      .currencyCheckbox{
+        width:50%;
+      }
+
+      .tzCheckbox:first-child,
+      .currencyCheckbox:first-child{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      
+      .tzCheckbox:not(:first-child),
+      .currencyCheckbox:not(:first-child){
+        border-top: 1px solid lightgray;
+      }
+      
+      .tzCheckbox:last-child,
+      .currencyCheckbox:last-child{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+    
+    @media (min-width: 1258px){
+      .tzCheckbox,
+      .currencyCheckbox{
+        width:43%;
+      }
+      
+      .tzCheckbox:not(:first-child),
+      .currencyCheckbox:not(:first-child){
+        border-top: 1px solid lightgray;
+      }
+      
+      .tzCheckbox:nth-child(even):not(.checked),
+      .currencyCheckbox:nth-child(even):not(.checked){
+        border-left: 1px solid lightgray;
+      }
+      
+      .tzCheckbox.checked:nth-child(even),
+      .currencyCheckbox.checked:nth-child(even){
+        /*border-left: 1px solid green;*/
+        border-right: 1px solid green;
+      }
+      
+      .tzCheckbox:last-child,
+      .currencyCheckbox:last-child{
+        /*border-bottom-left-radius: 5px;*/
+        border-bottom-right-radius: 5px;
+      }
+      
+      .tzCheckbox:nth-last-child(2),
+      .currencyCheckbox:nth-last-child(2){
+        border-bottom-left-radius: 5px;
+        /*border-bottom-right-radius: 5px;*/
+      }
+      
+      .tzCheckbox:first-child,
+      .currencyCheckbox:first-child{
+        border-top-left-radius: 5px;
+        /*border-top-right-radius: 5px;*/
+      }
+      
+      .tzCheckbox:nth-child(2),
+      .currencyCheckbox:nth-child(2){
+        border-top-right-radius: 5px;
+        border-top: 0;
+      }
+    }
+    
+      label#currSymbolTypeLabel {
+        width:96%;
+        padding:10px;
+        background-color: gainsboro;
+        margin-top:25px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor:pointer;
+      }
+      
+/*      label#currSymbolTypeLabel small{
+        font-size: smaller;
+      }*/
+
+      input[type=checkbox]#currSymbolType {
+        position: relative;
+        top: -.1em;
+        margin-right: 10px;
+      }
+
+      label#currSymbolTypeLabel:hover {
+        
+      }
+      
+      .tzHighlightCheckbox,
+      .currencyHighlightCheckbox{
+        width:96%;
+        padding:10px;
+        background-color:gainsboro;
+        cursor:pointer;
+      }
+      
+      .tzHighlightCheckbox:first-child,
+      .currencyHighlightCheckbox:first-child{
+        margin-top:25px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      
+      .tzHighlightCheckbox:not(:first-child),
+      .currencyHighlightCheckbox:not(:first-child){
+        border-top: 1px solid lightgray;
+      }
+      
+      .tzHighlightCheckbox:last-child,
+      .currencyHighlightCheckbox:last-child{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      
+      .tzHighlightCheckbox:not(.checked):hover,
+      .currencyHighlightCheckbox:not(.checked):hover{
+        background-color:paleGreen;
+      }
+      
+        .tzHighlightCheckbox label,
+        .currencyHighlightCheckbox label{
+            line-height: 150%;
+            font-size: 14px;
+            padding-left: 10px;
+            cursor:pointer;
+            margin:0;
+        }
+    
+    .livePreview
+    {
+      margin-top:20px;
+      width:50%;
+      text-align:center;
+      margin-left:auto;
+      margin-right:auto;
+      padding:10px;
+    }
+    
+    .livePreviewLabel
+    {
+      position: relative;
+      left: 28.8%;
+      top: 2em;
+      font-size: smaller;
+      color: lightBlue;
+    }
+
+      #tabColour .livePreview
+      {
+        width:calc(100% - 20px);
+        /*padding:10px;*/
+      }
+      
+      #tabColour .livePreviewLabel
+      {
+        left: 12px;
+      }
+
+    #moreLess{
+      position:absolute;
+      display:inline-block;
+    }
+    
+    .moreLessBtn{
+      position:relative;
+      top:-10px;
+      left:15px;
+      margin:0;
+      font-size:small;
+      border-radius:5px;
+      padding:0 5px;
+      cursor:pointer;
+      border:1px solid gray;
+    }
+    
+    .moreLessBtn:hover{
+      box-shadow:0 0 1px 1px gray;
+    }
+    
+    div#descrPane {
+      text-align:justify;
+      font-size:smaller;
+      padding-top:10px;
+    }
+
+  .unitTypeContent > input:checked+label,
+  #currSymbolTypeLabel.checked,
+  #unitHighlightTypeLabel.checked,
+  #currencyHighlightTypeLabel.checked,
+  #tzHighlightTypeLabel.checked,
+  label.noReplaceLabel.checked,
+  label.currReplaceLabel.checked,
+  label.moreOptionsLabel.checked,
+  .currencyCheckbox.checked,
+  .currencyHighlightCheckbox.checked,
+  .tzCheckbox.checked,
+  .tzHighlightCheckbox.checked,
+  .unitCheckbox.checked {
+    font-weight: bold;
+    background-color: Green;
+    color: white;
+  }
+
+.inBeta{
+  /*display:none;*/
+  color:red;
+  font-size:small;
+  font-style: italic;
+}
+
+.active .inBeta {
+  color:#11AA00;
+}
+
+#currencyCredit{
+  display:block;
+  font-size: smaller;
+  font-weight: bold;
+  text-align: center;
+}
+
+#otherTzInput,
+#otherCurrencyInput{
+  height:inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#otherTzForm form,
+#otherCurrencyForm form{
+  margin: 0 auto;
+  padding-left:3px;
+}
+
+.otherTzLabel,
+.otherCurrencyLabel{
+  height:inherit;
+}
+
+#tabTimeZone .page-header {
+  border: 0;
+  margin-bottom: 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.disabled{
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+
+.highlightType
+{
+  width:100%;
+  margin-right:auto;
+  margin-left: auto;
+  margin-top:25px;
+}
+
+.highlightType .btn
+{
+  width: calc(33% - 21px);
+}

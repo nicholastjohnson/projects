@@ -1,0 +1,691 @@
+{
+   "browserBtn_errorTitle": {
+      "message": "Your home currency exchange rate is not currently available."
+   },
+   "browserBtn_offBadge": {
+      "message": "off"
+   },
+   "browserBtn_offColor": {
+      "message": "#ff5555"
+   },
+   "browserBtn_offTitle": {
+      "message": "Click to enable auto-conversion of units & currencies"
+   },
+   "browserBtn_onBadge": {
+      "message": "on"
+   },
+   "browserBtn_onColor": {
+      "message": "#11ff11"
+   },
+   "browserBtn_onTitle": {
+      "message": "Click to disable auto-conversion of units & currencies"
+   },
+   "browserBtn_whitelistTitle": {
+      "message": "This page is whitelisted, so no conversion has been performed."
+   },
+   "colourSelection_post": {
+      "message": "\u003C/b>"
+   },
+   "colourSelection_pre": {
+      "message": "\u003Cb>Selected "
+   },
+   "colour_base": {
+      "description": "",
+      "message": "Default"
+   },
+   "colour_clear": {
+      "description": "",
+      "message": " "
+   },
+   "colour_none": {
+      "description": "",
+      "message": "None"
+   },
+   "colour_rounded": {
+      "description": "",
+      "message": "\u003Cinput type='checkbox' id='highlightType' name='highlightType' value='true' checked/>&nbsp;&nbsp;&nbsp;&nbsp;Use rounded highlights"
+   },
+   "colour_special": {
+      "description": "",
+      "message": "#663399Becca"
+   },
+   "currency_aed": {
+      "description": "",
+      "message": "UAE Dirham (AED, United Arab Emirates Dirham)"
+   },
+   "currency_ars": {
+      "description": "",
+      "message": "Argentine Peso (ARS, AR$)"
+   },
+   "currency_aud": {
+      "description": "",
+      "message": "Australian Dollar (AUD) "
+   },
+   "currency_bgn": {
+      "description": "",
+      "message": "Bulgarian Lev (BGN)"
+   },
+   "currency_brl": {
+      "description": "",
+      "message": "Brazilian Real (BRL, R&dollar;) "
+   },
+   "currency_btc": {
+      "description": "",
+      "message": "Bitcoin (BTC, XBT, B⃦) "
+   },
+   "currency_cad": {
+      "description": "",
+      "message": "Canadian Dollar (CAD) "
+   },
+   "currency_chf": {
+      "description": "",
+      "message": "Swiss Franc (CHF, SFr)"
+   },
+   "currency_clp": {
+      "description": "",
+      "message": "Chilean Peso (CLP, CL$)"
+   },
+   "currency_cny": {
+      "description": "",
+      "message": "Chinese Renminbi (CNY, CN&yen;) "
+   },
+   "currency_colour_title": {
+      "description": "",
+      "message": "Currency Highlight"
+   },
+   "currency_cop": {
+      "description": "",
+      "message": "Colombian Peso (COP, CO$)"
+   },
+   "currency_credit": {
+      "description": "",
+      "message": "Currency exchange rates from Yahoo!, through the Yahoo! Finance json interface."
+   },
+   "currency_czk": {
+      "description": "",
+      "message": "Czech Koruna (CZK, Kč)"
+   },
+   "currency_dkk": {
+      "description": "",
+      "message": "Danish Krone (DKK)"
+   },
+   "currency_dop": {
+      "description": "",
+      "message": "Dominican Peso (DOP, RD$)"
+   },
+   "currency_egp": {
+      "description": "",
+      "message": "Egyptian Pound (E£, EGP, L.E., LE)"
+   },
+   "currency_eur": {
+      "description": "",
+      "message": "Euro (EUR, &euro;) "
+   },
+   "currency_gbp": {
+      "description": "",
+      "message": "British Pound (GBP, &pound;) "
+   },
+   "currency_highlight_dashed": {
+      "description": "",
+      "message": "Highlight currencies with underline"
+   },
+   "currency_highlight_none": {
+      "description": "",
+      "message": "Do not highlight converted currencies"
+   },
+   "currency_highlight_rounded": {
+      "description": "",
+      "message": "Highlight currencies with rounded boxes"
+   },
+   "currency_hkd": {
+      "description": "",
+      "message": "Hong Kong Dollar (HKD) "
+   },
+   "currency_hrk": {
+      "description": "",
+      "message": "Croatian Kuna (HRK, kn)"
+   },
+   "currency_huf": {
+      "description": "",
+      "message": "Hungarian Forint (HUF, Ft)"
+   },
+   "currency_idr": {
+      "description": "",
+      "message": "Indonesian Rupiah (IDR, Rp) "
+   },
+   "currency_ils": {
+      "description": "",
+      "message": "Israeli New Sheqel (ILS, ₪)"
+   },
+   "currency_inr": {
+      "description": "",
+      "message": "Indian Rupee (INR, &#8377;) "
+   },
+   "currency_jmd": {
+      "description": "",
+      "message": "Jamaican Dollar (JMD, JM$)"
+   },
+   "currency_jpy": {
+      "description": "",
+      "message": "Japanese Yen (JPY, &yen;) "
+   },
+   "currency_krw": {
+      "description": "",
+      "message": "South Korean Won (KRW, ₩, ￦)"
+   },
+   "currency_kwd": {
+      "description": "",
+      "message": "Kuwaiti Dinar (KWD, KD)"
+   },
+   "currency_mad": {
+      "description": "",
+      "message": "Moroccan Dirham (MAD)"
+   },
+   "currency_mxn": {
+      "description": "",
+      "message": "Mexican Peso (MXN)"
+   },
+   "currency_myr": {
+      "description": "",
+      "message": "Malaysian Ringgit (MYR, RM)"
+   },
+   "currency_nok": {
+      "description": "",
+      "message": "Norweigian Krone (NOK)"
+   },
+   "currency_none": {
+      "description": "",
+      "message": "Do Not Convert Currencies "
+   },
+   "currency_nzd": {
+      "description": "",
+      "message": "New Zealand Dollar (NZD) "
+   },
+   "currency_other": {
+      "description": "",
+      "message": "Other Currency "
+   },
+   "currency_pen": {
+      "description": "",
+      "message": "Peruvian Nuevo Sol (PEN, S/.)"
+   },
+   "currency_php": {
+      "description": "",
+      "message": "Philippine Peso (PHP, ₱)"
+   },
+   "currency_pkr": {
+      "description": "",
+      "message": "Pakistani Rupee (PKR)"
+   },
+   "currency_pln": {
+      "description": "",
+      "message": "Polish zloty (złoty, PLN, zł)"
+   },
+   "currency_ron": {
+      "description": "",
+      "message": "Romanian Leu (RON, L)"
+   },
+   "currency_rub": {
+      "description": "",
+      "message": "Russian Ruble (RUB)"
+   },
+   "currency_sar": {
+      "description": "",
+      "message": "Saudi Riyal (SAR, SR)"
+   },
+   "currency_sek": {
+      "description": "",
+      "message": "Swedish Krona (SEK)"
+   },
+   "currency_sgd": {
+      "description": "",
+      "message": "Singapore Dollar (SG$, SGD)"
+   },
+   "currency_thb": {
+      "description": "",
+      "message": "Thai Baht (THB, ฿)"
+   },
+   "currency_title": {
+      "description": "",
+      "message": "Select your home currency"
+   },
+   "currency_try": {
+      "description": "",
+      "message": "Turkish Lira (TRY, TL, ₺)"
+   },
+   "currency_twd": {
+      "description": "",
+      "message": "New Taiwan Dollar (TWD, TW$)"
+   },
+   "currency_typeLabel": {
+      "description": "",
+      "message": "\u003Cinput type=\"checkbox\" id=\"currSymbolType\" name=\"currSymbolType\" value=\"true\"/>Show currency symbol (e.g. &pound;) instead of currency code (e.g. GBP)"
+   },
+   "currency_usd": {
+      "description": "",
+      "message": "US Dollar (USD, &dollar;) "
+   },
+   "currency_vnd": {
+      "description": "",
+      "message": "Vietnamese Dong (VND) "
+   },
+   "currency_zar": {
+      "description": "",
+      "message": "South African Rand (SA Rand, ZAR)"
+   },
+   "descr_colour": {
+      "message": "\u003Cstrong>Select the colour with which to highlight the converted numbers and units.\u003C/strong> \u003Cbr/>\u003Cbr/>Choose 'None' to disable highlighting (not recommended)."
+   },
+   "descr_currency": {
+      "message": "\u003Cstrong>Select your local currency unit.\u003C/strong>\u003Cbr/>Amounts in other currencies will be converted to your home currency."
+   },
+   "descr_extras": {
+      "message": "\u003Cstrong>\u003Ci class='icon-exclamation-sign'>\u003C/i> Advanced options. Please do not change unless you are sure of the effects.\u003C/strong>"
+   },
+   "descr_feedback": {
+      "message": ""
+   },
+   "descr_nr": {
+      "message": "\u003Cstrong>Decide whether to keep original values in web page or replace them with converted values.\u003C/strong>\u003Cbr/>\u003Cbr/>Default behaviour is to keep original values and show converted values in tool tip."
+   },
+   "descr_timeZone": {
+      "message": "\u003Cstrong>\u003Ci class='icon-exclamation-sign'>\u003C/i>Pro feature, requires in-app payment after initial trial.\u003Cbr/>\u003Cbr/>Select your local, and additional time zones.\u003C/strong>\u003Cbr/>Times listed in other time zones will be converted to your home time zone.\u003Cbr>Additional time zones specified will be available on hover, e.g time zones of all your other team members."
+   },
+   "descr_us": {
+      "message": "\u003Cstrong>Select the unit system that you use.\u003C/strong> \u003Cbr/>\u003Cbr/>Values in other units will be converted to units in your system.\u003Cbr/>\u003Cbr/>You can also select a custom mix of units by selecting different units for each value type below."
+   },
+   "descr_whitelist": {
+      "message": "\u003Cstrong>Whitelist websites and phrases to stop auto-conversion.\u003C/strong>\u003Cbr/>\u003Cbr/>Select websites on which you want to disable auto-conversion. Also, select any specific phrases you want to prevent from converting (e.g. PHP5)."
+   },
+   "experimental_URL": {
+      "description": "",
+      "message": "Web Page URL: "
+   },
+   "experimental_currURLs": {
+      "description": "",
+      "message": "Current excepted URLs:"
+   },
+   "experimental_disableIn": {
+      "description": "",
+      "message": "\u003Cinput type='checkbox' id='disableIn'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not convert \u003Ci>\"in'\u003C/i> as \u003Ci>'inches'\u003C/i>, always treat it as a preposition"
+   },
+   "experimental_disableQuotes": {
+      "description": "",
+      "message": "\u003Cinput type='checkbox' id='disableQuotes'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not convert \u003Cb>'\u003C/b> and \u003Cb>\"\u003C/b> as \u003Ci>'feet'\u003C/i> and \u003Ci>'inches'\u003C/i>, respectively."
+   },
+   "experimental_disableTo": {
+      "description": "",
+      "message": "\u003Cinput type='checkbox' id='disableTo'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not convert \u003Ci>'to'\u003C/i> as \u003Ci>'tonnes'\u003C/i>, always treat it as a preposition"
+   },
+   "experimental_exceptedTitle": {
+      "description": "",
+      "message": "Excepted Domains - \u003Csmall>Websites where you don't want automatic conversion.\u003C/small>"
+   },
+   "experimental_lbSt": {
+      "description": "",
+      "message": "\u003Cinput type='checkbox' id='lbSt'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convert weight directly to Pounds (Lb) instead of Stones (St)"
+   },
+   "experimental_showContextMenu": {
+      "description": "",
+      "message": "\u003Cinput type='checkbox' id='showContextMenu'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show right-click / context menu to trigger conversion on pages"
+   },
+   "experimental_showTooltip": {
+      "description": "",
+      "message": "\u003Cinput type='checkbox' id='showTooltip'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show conversion in a ToolTip instead of CSS popup."
+   },
+   "experimental_showUnitRate": {
+      "description": "",
+      "message": "\u003Cinput type='checkbox' id='showUnitRate'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show conversion rate in conversion card popups for Unit conversions"
+   },
+   "experimental_title": {
+      "description": "",
+      "message": "Advanced Settings \u003Csmall>(May not work in some cases.)\u003C/small>"
+   },
+   "freshness_fresh": {
+      "description": "",
+      "message": "Exchange rate was updated less than 6 hours ago."
+   },
+   "freshness_na": {
+      "description": "",
+      "message": "Cannot fetch exchange rate! Please try again later"
+   },
+   "freshness_ripe": {
+      "description": "",
+      "message": "Exchange rate was updated more than 6 hours ago."
+   },
+   "freshness_stale": {
+      "description": "",
+      "message": "Exchange rate was updated more than 24 hours ago!"
+   },
+   "installNotice_text": {
+      "message": "Click to see some frequently asked questions."
+   },
+   "installNotice_title": {
+      "message": "autoConvert Installed"
+   },
+   "installNotice_track": {
+      "message": "FAQ"
+   },
+   "installNotice_url": {
+      "message": "http://c306.net/autoConvert/faq.html?utm_source=autoconvert%20for%20chrome&utm_medium=referral&utm_content=notification&utm_campaign=ac_ext"
+   },
+   "menu_colour": {
+      "message": "Highlight Colours"
+   },
+   "menu_currency": {
+      "message": "Select Currency"
+   },
+   "menu_extras": {
+      "message": "Advanced Settings"
+   },
+   "menu_feedback": {
+      "message": "Send Feedback"
+   },
+   "menu_noReplace": {
+      "message": "Replacement Behaviour"
+   },
+   "menu_timeZone": {
+      "message": "Select Time Zone \u003Csup class=\"inBeta\">Pro\u003C/sup>"
+   },
+   "menu_title": {
+      "message": "Settings"
+   },
+   "menu_us": {
+      "message": "Select Units"
+   },
+   "menu_whitelist": {
+      "message": "Whitelist"
+   },
+   "noReplace_currency_title": {
+      "description": "",
+      "message": "Currency Conversion:"
+   },
+   "noReplace_nrOff": {
+      "description": "",
+      "message": "Show converted values on web page. Show original values in tooltip balloon."
+   },
+   "noReplace_nrOn": {
+      "description": "",
+      "message": "Keep original values on web page. Show converted values in tooltip balloon."
+   },
+   "noReplace_title": {
+      "description": "",
+      "message": "Select Replacement Behaviour"
+   },
+   "noReplace_unit_title": {
+      "description": "",
+      "message": "Unit System Conversion:"
+   },
+   "settingSaved_clear": {
+      "message": " "
+   },
+   "settingSaved_closeButton": {
+      "message": "\u003Ca class='close' data-dismiss='alert' href='#'>&times;\u003C/a>"
+   },
+   "settingSaved_colon": {
+      "message": " : "
+   },
+   "settingSaved_colour": {
+      "message": "New Highlight Colour Saved."
+   },
+   "settingSaved_common": {
+      "message": "Setting Saved"
+   },
+   "settingSaved_dot": {
+      "message": "."
+   },
+   "settingSaved_installMsg": {
+      "message": "Thanks for installing autoConvert!\u003Cbr/>You can check the frequently asked questions about the extension \u003Ca href='http://c306.net/autoConvert/faq.html?utm_source=autoconvert%20for%20chrome&utm_medium=referral&utm_content=optionspage_savestatus&utm_campaign=ac_ext' id='extensionInstalledLink' target='_blank'>here\u003C/a>."
+   },
+   "settingSaved_updateMsg": {
+      "message": "autoConvert has been updated. Click \u003Ca href='http://c306.net/autoConvert/changelog.html?utm_source=autoconvert%20for%20chrome&utm_medium=referral&utm_content=optionspage_savestatus&utm_campaign=ac_ext' id='extensionUpdatedLink' target='_blank'>here\u003C/a> to see the changes."
+   },
+   "tz_aut": {
+      "description": "AUT : Australia Time",
+      "message": "Australia Time (AUT)"
+   },
+   "tz_bst": {
+      "description": "BST : British Time",
+      "message": "British Time (BST / GMT)"
+   },
+   "tz_cet": {
+      "description": "CET : Central Europe Time",
+      "message": "Central Europe Time (CET / CEST / CEDT)"
+   },
+   "tz_colour_title": {
+      "description": "",
+      "message": "Time Zone Highlight"
+   },
+   "tz_comingSoon": {
+      "description": "",
+      "message": "Coming Soon!"
+   },
+   "tz_credit": {
+      "description": "",
+      "message": " "
+   },
+   "tz_cst": {
+      "description": "CST : Central Time, US",
+      "message": "Central Time, US (CST / CDT)"
+   },
+   "tz_ct": {
+      "description": "CT : China Time",
+      "message": "China Time (CT / CST)"
+   },
+   "tz_et": {
+      "description": "ET : Eastern Time, US",
+      "message": "Eastern Time, US (EST / EDT)"
+   },
+   "tz_gmt": {
+      "description": "GMT : UTC/UCT/GMT",
+      "message": "UTC/UCT/GMT"
+   },
+   "tz_highlight_dashed": {
+      "description": "",
+      "message": "Highlight times with underline"
+   },
+   "tz_highlight_none": {
+      "description": "",
+      "message": "Do not highlight converted times"
+   },
+   "tz_highlight_rounded": {
+      "description": "",
+      "message": "Highlight times with rounded boxes"
+   },
+   "tz_hkt": {
+      "description": "HKT : Hong Kong Time",
+      "message": "Hong Kong Time (HKT)"
+   },
+   "tz_ist": {
+      "description": "IST : India Time",
+      "message": "India Time (IST)"
+   },
+   "tz_jst": {
+      "description": "JST : Japan Time",
+      "message": "Japan Time (JST)"
+   },
+   "tz_mt": {
+      "description": "MT : Mountain Time, US",
+      "message": "Mountain Time, US (MST / MDT)"
+   },
+   "tz_none": {
+      "description": "",
+      "message": "Do Not Convert Time Zones"
+   },
+   "tz_other": {
+      "description": "",
+      "message": "Other Time Zone"
+   },
+   "tz_pst": {
+      "description": "PST : Pacific Time, US",
+      "message": "Pacific Time, US (PST / PDT)"
+   },
+   "tz_sat": {
+      "description": "SAT : South Africa Time",
+      "message": "South Africa Time (SAT)"
+   },
+   "tz_title": {
+      "description": "",
+      "message": "Select your home time zone"
+   },
+   "unit_arImp": {
+      "description": "",
+      "message": "Acre, Sq Feet"
+   },
+   "unit_arMet": {
+      "description": "",
+      "message": "Sq Metre"
+   },
+   "unit_area": {
+      "description": "",
+      "message": "Area"
+   },
+   "unit_colour_title": {
+      "description": "",
+      "message": "Unit Highlight"
+   },
+   "unit_distance": {
+      "description": "",
+      "message": "Distance"
+   },
+   "unit_duImp": {
+      "description": "",
+      "message": "Inch, Feet, Yard, Mile"
+   },
+   "unit_duMet": {
+      "description": "",
+      "message": "Metre"
+   },
+   "unit_enImp": {
+      "description": "",
+      "message": "BTU, Calorie"
+   },
+   "unit_enMet": {
+      "description": "",
+      "message": "Joule"
+   },
+   "unit_energy": {
+      "description": "",
+      "message": "Energy"
+   },
+   "unit_imperial": {
+      "description": "",
+      "message": "Imperial (e.g. pounds, miles, calories, horsepower, etc)"
+   },
+   "unit_less": {
+      "description": "",
+      "message": "\u003Cstrong>&#8743;\u003C/strong> Less"
+   },
+   "unit_metric": {
+      "description": "",
+      "message": "Metric (e.g. kg, km, litres, joules, watts, etc)"
+   },
+   "unit_more": {
+      "description": "",
+      "message": "\u003Cstrong>&#8744;\u003C/strong> More"
+   },
+   "unit_none": {
+      "description": "",
+      "message": "Do Not Convert"
+   },
+   "unit_power": {
+      "description": "",
+      "message": "Power"
+   },
+   "unit_pwImp": {
+      "description": "",
+      "message": "Horsepower"
+   },
+   "unit_pwMet": {
+      "description": "",
+      "message": "Watt"
+   },
+   "unit_temperature": {
+      "description": "",
+      "message": "Temperature"
+   },
+   "unit_title": {
+      "description": "",
+      "message": "Select Units"
+   },
+   "unit_torque": {
+      "description": "",
+      "message": "Torque"
+   },
+   "unit_tpImp": {
+      "description": "",
+      "message": "Fahrenheit"
+   },
+   "unit_tpMet": {
+      "description": "",
+      "message": "Celsius"
+   },
+   "unit_tqImp": {
+      "description": "",
+      "message": "lb·ft"
+   },
+   "unit_tqMet": {
+      "description": "",
+      "message": "N·m"
+   },
+   "unit_volImp": {
+      "description": "",
+      "message": "Fl Oz, Gallon, Cubic Inch, Barrel"
+   },
+   "unit_volMet": {
+      "description": "",
+      "message": "Litre"
+   },
+   "unit_volume": {
+      "description": "",
+      "message": "Volume"
+   },
+   "unit_weight": {
+      "description": "",
+      "message": "Weight"
+   },
+   "unit_wtImp": {
+      "description": "",
+      "message": "Ounce, Pound, Stone, Ton"
+   },
+   "unit_wtMet": {
+      "description": "",
+      "message": "Gram"
+   },
+   "upgradeNotice_text": {
+      "message": "Click to see list of changes."
+   },
+   "upgradeNotice_title": {
+      "message": "autoConvert Updated"
+   },
+   "upgradeNotice_track": {
+      "message": "changeLog"
+   },
+   "upgradeNotice_url": {
+      "message": "http://c306.net/autoConvert/changelog.html?utm_source=autoconvert%20for%20chrome&utm_medium=referral&utm_content=notification&utm_campaign=ac_ext"
+   },
+   "whitelist_addButtonText": {
+      "description": "",
+      "message": "Add"
+   },
+   "whitelist_addHelpText": {
+      "description": "",
+      "message": "Provide URL of website or domain you want to stop autoConvert from working on."
+   },
+   "whitelist_addLabel": {
+      "description": "",
+      "message": "Add to whitelist"
+   },
+   "whitelist_addPlaceHolder": {
+      "description": "",
+      "message": "example.com, https://, docs.google.com, etc"
+   },
+   "whitelist_removeButtonText": {
+      "description": "",
+      "message": "Remove from whitelist"
+   },
+   "whitelist_removeLabel": {
+      "description": "",
+      "message": "Manage whitelist"
+   }
+}

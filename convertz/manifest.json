@@ -1,0 +1,46 @@
+{
+   "background": {
+      "scripts": [ "js/ext/google-analytics-bundle.js", "js/ext/jquery.min.js", "js/ext/jquery-migrate-1.2.1.js", "js/core.js", "js/currRetreiver.js", "js/bgscript.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "img/icon19-noborder.png",
+         "38": "img/icon38-noborder.png"
+      },
+      "default_title": "autoConvert - Click to switch conversion off/on"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "chromeos": "Ctrl+Comma",
+            "linux": "Ctrl+Comma",
+            "mac": "Command+Comma",
+            "windows": "Ctrl+Comma"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/ext/jquery.min.js", "js/ext/jquery-migrate-1.2.1.js", "js/core.js", "js/ac.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "Automatically converts units and currencies on web pages to familiar values, so you don't have to find that calculator again.",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSi7Ctf13vjrHFRq+rGyo4JG0fD2E4PklU/bcHiMXeDqfg9QE8PDCQ3xMktRLwOvhdyTkd3qUIvObYUIclK8bL6gw70raGatxS/AuuhMvHfyBnENjHFniqEocM9mAWTySmPWDkd3mjn5QOJGLp2LeEdkmcHxvoipXlq5fz6B9I0wIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "23",
+   "name": "autoConvert - Auto Currency & Unit Converter",
+   "offline_enabled": true,
+   "options_page": "options.html",
+   "permissions": [ "tabs", "notifications", "contextMenus", "storage", "unlimitedStorage", "https://www.google-analytics.com/", "http://*.google.com/", "http://*/*", "https://*/*" ],
+   "short_name": "autoConvert",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.6.0.2",
+   "web_accessible_resources": [ "img/icon128.png" ]
+}
