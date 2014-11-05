@@ -15,9 +15,11 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 class MainHandler(webapp2.RequestHandler):
     def get(self):
 
-        teamName = get_data.all_coach_data()[1]
-        coachName = get_data.all_coach_data()[2]
-        teamKey = get_data.all_coach_data()[0]
+        data = get_data.all_coach_data()
+
+        teamName = data[1]
+        coachName = data[2]
+        teamKey = data[0]
 
         values = {
             'coachName': coachName,
@@ -28,6 +30,15 @@ class MainHandler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('index.html')
         self.response.write(template.render(values))
 
+    def post(self):
+        refreshRequest = self.request.get('refreshReq')
+
+        if refreshRequest == "NICK":
+            get_data.put_data_in_ndb()
+        else:
+            pass
+
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', MainHandler),
+    ('index.html', MainHandler)
 ], debug=True)
