@@ -5,6 +5,9 @@ import sys
 
 sys.path.insert(0, 'lib')
 
+import logging
+logging.info(sys.path)
+
 JINJA_ENVIRONMENT = jinja2.Environment(
     loader=jinja2.FileSystemLoader('templates'),
     extensions=['jinja2.ext.autoescape'],
