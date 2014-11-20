@@ -13,4 +13,5 @@ def index():
 
     return '<b>Hello %s!</b>' % item['name']
 
+bottle.debug(True)
 bottle.run(host='localhost', port=8080)

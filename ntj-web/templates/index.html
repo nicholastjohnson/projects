@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Geek for Hire - Nicholas Johnson can help any business, large or small, achieve their technology goals.">
+    <meta name="author" content="Nicholas T Johnson">
+    <meta name="keywords" content="atlanta it consulting, web developer, development classes for kids, virtual CIO, virtual CTO, part time CIO, startup CIO, part time CTO, startup CTO, computer backup plans, disaster reovery, it support, technology recommendations, technology consultant">
+
+    <title>Nicholas T Johnson - Geek for Hire</title>
+
+    <!-- Web Components -->
+    <link rel="import" href="webcomponent/github-card.html">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/freelancer.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics Tracking -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-41915318-1', 'nicholastjohnson.com');
+      ga('send', 'pageview');
+
+    </script>
+
+    <!-- UserVoice widget -->
+    <script>
+        // Include the UserVoice JavaScript SDK (only needed once on a page)
+        UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/mnF2FEGdVLGznYX29g9Q.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+        //
+        // UserVoice Javascript SDK developer documentation:
+        // https://www.uservoice.com/o/javascript-sdk
+        //
+
+        // Set colors
+        UserVoice.push(['set', {
+          accent_color: '#448dd6',
+          trigger_color: 'white',
+          trigger_background_color: '#e23a39'
+        }]);
+
+        // Identify the user and pass traits
+        // To enable, replace sample data with actual user traits and uncomment the line
+        UserVoice.push(['identify', {
+          //email:      'john.doe@example.com', // User’s email address
+          //name:       'John Doe', // User’s real name
+          //created_at: 1364406966, // Unix timestamp for the date the user signed up
+          //id:         123, // Optional: Unique id of the user (if set, this should not change)
+          //type:       'Owner', // Optional: segment your users by type
+          //account: {
+          //  id:           123, // Optional: associate multiple users with a single account
+          //  name:         'Acme, Co.', // Account name
+          //  created_at:   1364406966, // Unix timestamp for the date the account was created
+          //  monthly_rate: 9.99, // Decimal; monthly rate of the account
+          //  ltv:          1495.00, // Decimal; lifetime value of the account
+          //  plan:         'Enhanced' // Plan name for the account
+          //}
+        }]);
+
+        // Add default trigger to the bottom-right corner of the window:
+        UserVoice.push(['addTrigger', { mode: 'smartvote', trigger_position: 'bottom-right' }]);
+
+        // Or, use your own custom trigger:
+        //UserVoice.push(['addTrigger', '#id', { mode: 'smartvote' }]);
+
+        // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+        UserVoice.push(['autoprompt', {}]);
+    </script>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Geek for Hire</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Services</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="page-scroll">
+                        <!-- TeamViewer Logo (generated at http://www.teamviewer.com) -->
+                        <div style="position:relative; width:120px; height:60px;">
+                          <a href="http://www.teamviewer.com/link/?url=753663&id=1586936730" style="text-decoration:none;">
+                            <img src="http://www.teamviewer.com/link/?url=963497&id=1586936730" alt="Remote Access and Support over the Internet with TeamViewer" title="Remote Access and Support over the Internet with TeamViewer" border="0" width="120" height="60" />
+                            <span style="position:absolute; top:17px; left:45px; display:block; cursor:pointer; color:#424242; font-family:Arial; font-size:11px; line-height:1.2em; font-weight:bold; text-align:center; width:70px;">
+                              Get Support
+                            </span>
+                          </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Nicholas T Johnson</span>
+                        <hr class="star-light">
+                        <span class="skills">Virtual CIO - General IT Support - Teacher</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Services</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/vcio.png" class="img-responsive" alt="Virtual CIO" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/genitsupport.png" class="img-responsive" alt="General IT Support" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/teaching.png" class="img-responsive" alt="Development Classes" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Nick was introduced to computers the same way most people were in the 90s. A shiny disk arrived in his mailbox from AOL and connected him to the entire world. Fast forward 20 years, and Nick has done a little bit of everything in the world of IT. Currently, Nick works on two healthcare IT startups that he helped create, teaches development to kids, acts as vCIO for several small businesses, and is the on-call geek for many people -his family and friends included.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Nick was born and raised in East Cobb - attending Blackwell Elementary, McCleskey Middle, and Sprayberry High.  After starting college and his family, Nick and his wife moved back to East Cobb from Atlanta. They have 3 little boys, a dog, a cat, and countless lizards and bugs that his boys want to keep. Nick's two older sons are already learning development skills that will last a lifetime. When they aren't working on technology, Nick and his family enjoy exploring the many parks and trails in the region and biking together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <span align="center"><h2>By Phone</h2>
+                    <h3>404-425-9970</h3>
+                    <br />
+                    <h2>By Email</h2>
+                    <h3><a href="mailto:hello@eastcobbprogramming.com">nick@nicholastjohnson.com</a></h3></span>
+                    <github-card user="nicholastjohnson"></github-card>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Marietta, GA 30062</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li><a href="http://plus.google.com/+NicholasTJohnson" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li><a href="http://linkedin.com/in/nicholastjohnson" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <!--<li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Call Me Now</h3>
+                        <object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=57df490a6831890599a7697098b37bb0a50adbab&style=0" /></object>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; 2014 - Nicholas T Johnson
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <span align="center"><h2>Virtual CIO</h2></span>
+                            <hr class="star-primary">
+                            <p>What business problems keep you up at night? Questions like: How do I grow the business? Minimize expenses? Make employees mobile and efficient? Protect my company from a natural disaster? Ensure my customer and employee data is secure?</p>
+                            <p>Good IT strategy provides solutions to these questions and reduces expenses for your overall business. Nick will work with you to develop a business-aligned IT road map to:</p>
+                            <ul>
+                                <li>Reduce bottom-line expense (not just IT expenses)</li>
+                                <li>Grow your business or add a new business line</li>
+                                <li>Enhance customer service through technology</li>
+                                <li>Apply sound business principles to determine IT staff, supplier, software, and hardware needs</li>
+                                <li>Protect your business from risk and data privacy issues</li>
+                            </ul>
+                            <br />
+                            <br />
+                            <h3>Overview of Service Offerings</h3>
+                            <br />
+                            <h4>Fractional CIO</h4>
+                            <p>A fractional CIO provides the same expertise and capability of a full-time CIO without the overhead and benefits associated with adding another top-level executive. As your fractional CIO, Nick will become a key member of your leadership team to manage the IT strategy and provide critical analysis of business initiatives, similar to the way you would consult a business lawyer or CPA for tax or accounting issues. On a part-time basis or on a project-by-project basis, Nick will work with you to grow your business and reduce expenses through a business-aligned IT road map.</p>
+                            <h5>Benefits</h5>
+                            <ul>
+                                <li>Ensures IT expenses add value</li>
+                                <li>Incorporates IT into the business plan to support the overall plan</li>
+                                <li>Provides a critical review of business initiatives</li>
+                                <li>Serves as an IT member of your management team</li>
+                            </ul>
+                            <br />
+                            <h4>Cloud Technology Faciliation</h4>
+                            <p>Improve internal and external communication and relationship management with anytime, anywhere online access to your systems and data. Maximize productivity and efficiency with online software, email access, shared calendars, document management, customer relationship management, and financials management; online servers and storage of your business data; and Web conferencing—audio and video—and presentation capabilities.</p>
+                            <h5>Benefits</h5>
+                            <ul>
+                                <li>No capital purchase required for software or servers</li>
+                                <li>Adjusts to your company size</li>
+                                <li>Significant reduction in IT support</li>
+                                <li>Automatic data backups</li>
+                                <li>Software upgrades included</li>
+                                <li>Robust security</li>
+                                <li>Removal of risk of theft, fire and other disasters from servers</li>
+                                <li>Simplifies disaster recovery</li>
+                                <li>Mobile access</li>
+                                <li>Improves internal and external communication and coordination</li>
+                                <li>Reduces need for travel and increases flexibility</li>
+                                <li>Reduces storage costs and frees up space</li>
+                            </ul>
+                            <br />
+                            <h4>Outsourced IT Management Services</h4>
+                            <p>Whether your business needs expert IT consultation or day-to-day management for your IT infrastructure, Nick offers service options to accomplish your business objectives, such as IT help desk management, system monitoring, software patch and anti-virus management, online backup and recovery, and office relocation and setup.</p>
+                            <h5>Benefits</h5>
+                            <ul>
+                                <li>No capital investments required</li>
+                                <li>Reduction in overhead costs</li>
+                                <li>Usage-based expenses—Costs adjust as needs grow or shrink</li>
+                                <li>Leverages robust tools on a fractional basis</li>
+                                <li>Allows you to focus on your core business as IT management headaches are removed</li>
+                            </ul>
+                            <br />
+                            <h4>Get started today</h4>
+                            <p>Nick brings IT strategy to small and medium sized business. He can help you develop a business aliged IT road map that grows with your company. Contact Nick today for more information.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <span align="center"><h2>General IT Support</h2></span>
+                            <hr class="star-primary">
+                            <p>So, you don't need a vCIO, but you've got a project or several projects that need someone with years of technology experience to help with. Nick can help. There's no reason to spend hours of your time banging your head against a wall, when Nick can provide quick responses to your most urgent issues.</p>
+                            <ul>
+                                <li>Get help optimizing your Word and Excel documents</li>
+                                <li>Create a first class website for your business or organization</li>
+                                <li>Build your social media presence</li>
+                                <li>Implement a new technology</li>
+                                <li>Create a surefire backup and disaster recovery plan</li>
+                            </ul>
+                            <br />
+                            <br />
+                            <h3>Overview of Service Offerings</h3>
+                            <br />
+                            <h4>Word and Excel</h4>
+                            <p>If you're like most people, you can find your way around Word and Excel, but sometimes, you just wish it could be better. For more than 15 years, Nick has been a Word and Excel poweruser. Let Nick help you create:</p>
+                            <ul>
+                                <li>Pivot tables and pivot charts</li>
+                                <li>Custom, automatically updated dashboards</li>
+                                <li>Score cards and executive summaries</li>
+                                <li>Calculations, expressions, and formulas to automate repetitive tasks</li>
+                                <li>Accounting and finance models</li>
+                                <li>Charts, graphs, reports, and analysis</li>
+                                <li>Mail merges and labels</li>
+                                <li>Reusable Word templates</li>
+                                <li>Easy to read manuals</li>
+                                <li>Professional quality Word reports</li>
+                            </ul>
+                            <br />
+                            <h4>Website Development</h4>
+                            <p>Did you know you don't have to stick with the same old .com web address as everyone else? If you want a website for your neighborhood swim club, you could get a domain with a .club address (like EastCobbSwimming.club), or if you're a wedding photographer, you could get a .photography web address. There's more - .guru, .build, .vacations, .menu, and many more are all available.</p>
+                            <p>Whether you decide to go with a fancy new domain or a traditional .com, you need to have a website that works just as hard as you do.</p>
+                            <p>Nick will meet with you and your key stakeholders to determine exactly how the website should look and behave, and you will be proud to show your new face to the world.</p>
+                            <br />
+                            <h4>Social Media Presence</h4>
+                            <p>Your customers are on social media. Are you?</p>
+                            <p>Nick can help you navigate the confusing waters of social media and teach you how to make social media drive traffic to your website and dollars to your bottom line. With scheduled updates and keyword driven content, Nick will have your company climbing the search results page in no time.</p>
+                            <p>How many of these are you currently using? Maybe you should try them all.</p>
+                            <ul>
+                                <li>Google Plus</li>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Reddit</li>
+                                <li>LinkedIn</li>
+                                <li>YouTube</li>
+                                <li>FourSquare</li>
+                                <li>Yelp</li>
+                                <li>Pinterest</li>
+                                <li>Flikr</li>
+                            </ul>
+                            <br />
+                            <h4>Technology Implementations</h4>
+                            <p>So, you got a new MacBook, but you've been a Windows user your whole life. Or, you want to implement a new phone system in your office. Or, you keep hearing about this whole "cloud" thing, but you aren't quite sure if you should be there.</p>
+                            <p>Nick can help you achieve your goals with one off technology implmentations. Whether you're trying to pick an internet provider or need to implement a secure network, Nick can handle any project, large or small.</p>
+                            <p>There are literally thousands of projects that Nick has done over the years that fall into this category, but here's a short list to get you thinking:</p>
+                            <ul>
+                                <li>Network design and implementation</li>
+                                <li>Infrastructure design and implementation</li>
+                                <li>New software selection, installation and training</li>
+                                <li>New hardware (phones, computers, etc) selection, setup and training</li>
+                            </ul>
+                            <br />
+                            <h4>Backup and Disaster Recovery</h4>
+                            <p>If you've ever lost a drive or laptop, you know how painful it can be, especially if you have irreplacable pictures of your friends and family on them. Technology has advanced so quickly, that you can store every digital file you own online, securely for only a few dollars a month.</p>
+                            <p>There are hundreds of software services out there that promise to keep all of your personal information backed up, but they are costly and complicated. Let Nick take the wheel and get you to a state of calm in knowing that your data is safe and secure regardless of what happens to your computer.</p>
+                            <p>If you've already lost some data, STOP! Don't do another thing on that computer. If you're on that computer now, turn it off, NOW. No, seriously! Pull the plug! Take out the battery! We'll be here when you get back from a different computer.</p>
+                            <p>Good, you made it back. Okay, there is a chance that your data is recoverable. It isn't easy, and it may be time consuming. But, there's a chance.  And, when your son's first birthday pictures are hanging in the balance, you have to try.</p>
+                            <p>Nick has successfully recovered lost pictures and videos from USB sticks, hard drives and computers that have crashed. It doesn't always work, but it could.</p>
+                            <p>Let Nick get you on a backup plan, so you'll never have to worry about losing precious data again.</p>
+                            <br />
+                            <h4>Get started today</h4>
+                            <p>Nick can help individuals and businesses with their one off IT support needs, and let you get back to doing what you want to do. Contact Nick today for more information.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <span align="center"><h2>Teaching</h2></span>
+                            <hr class="star-primary">
+                            <p>Software development isn't going anywhere. It is estimated that there will be more than 1,000,000 development jobs without candidates to fill them by 2020. Nick started <a href="http://nextcodeninja.org" target="_blank">NextCodeNinja.org</a> in early 2014 to help students, young and old, learn how to create their own computer software.</p>
+                            <p>Nick teaches kids from 2nd to 12th grade the art of programming at beginner, intermediate and advanced levels. He also offers private tutoring for any age.</p>
+                            <p>Find out more by visiting his teaching portal here: <a href="http://nextcodeninja.org" target="_blank">NextCodeNinja.org</a></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/freelancer.js"></script>
+
+</body>
+
+</html>

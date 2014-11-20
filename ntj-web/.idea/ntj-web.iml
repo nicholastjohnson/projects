@@ -3,23 +3,24 @@
   <component name="FacetManager">
     <facet type="google-appengine-python" name="Google App Engine (Python)">
       <configuration>
-        <option name="rootFolder" value="G:\projects\ntj-web\main" />
+        <option name="rootFolder" value="G:\projects\ntj-web" />
         <option name="sdkFolder" value="C:\Program Files (x86)\Google\google_appengine" />
         <option name="templatesFolder" value="" />
-        <option name="oauth2" value="false" />
+        <option name="oauth2" value="true" />
       </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 2.7.8 virtualenv at G:\projects\ntj-web\env" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Google App Engine SDK" level="project" />
+    <orderEntry type="library" name="sass-stdlib" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="C:\Users\Nick\Google Drive\dev\projects\ntj-web\templates" />
+        <option value="$MODULE_DIR$/templates" />
       </list>
     </option>
   </component>

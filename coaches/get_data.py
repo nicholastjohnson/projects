@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+from lib.bs4 import BeautifulSoup
 import urllib2, re
 from google.appengine.ext import ndb
 

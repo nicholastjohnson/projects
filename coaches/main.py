@@ -1,12 +1,12 @@
 import webapp2
 import jinja2
 import get_data
-import sys
+import os, sys
 
-sys.path.insert(0, 'lib')
+rootdir = os.path.dirname(os.path.abspath(__file__))
+lib = os.path.join(rootdir, 'lib')
+sys.path.append(lib)
 
-import logging
-logging.info(sys.path)
 
 JINJA_ENVIRONMENT = jinja2.Environment(
     loader=jinja2.FileSystemLoader('templates'),
@@ -41,7 +41,9 @@ class MainHandler(webapp2.RequestHandler):
         else:
             pass
 
+        template = JINJA_ENVIRONMENT.get_template('index.html')
+        self.response.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-    ('index.html', MainHandler)
 ], debug=True)
